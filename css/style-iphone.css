@@ -1,0 +1,325 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+body{
+    background: #3e3e3f;
+    min-width: 1024px;
+    color: #333;
+    outline: none;
+}
+header {
+    width: 100%;
+    background: #101010;
+    height: 60px;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    min-width: 1024px;
+    margin: auto;
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+/* .logo-topzone {
+    float: left;
+    transition: opacity .1s cubic-bezier(.645,.045,.355,1);
+}
+.logo-topzone a:first-child {
+    padding: 0 10px 0 0;
+    border-right: 1px solid #3b3b3b;
+    margin-right: 10px;
+}
+.logo-topzone a {
+    display: inline-block;
+    vertical-align: middle;
+} */
+.menu {
+    float: left;
+    width: 65%;
+}
+ul{
+    list-style: none;
+}
+.menu li{
+    animation-delay: 30ms;
+    animation-duration: 400ms;
+    animation-fill-mode: both;
+    animation-name: specialFadeIn;
+}
+.menu li {
+    float: left;
+    width: 12%;
+    transition: opacity .2s cubic-bezier(.645,.045,.355,1);
+}
+.menu li.active a {
+    background: #2d2d2d;
+}
+.menu li a {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px 0 19px;
+}
+.menu li a span {
+    display: block;
+    overflow: hidden;
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+}
+/* css-search-cart */
+.search-cart {
+    float: right;
+    position: relative;
+}
+.search-sp {
+    display: inline-block;
+    vertical-align: middle;
+    background: #2f3033;
+    border-radius: 100%;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    cursor: pointer;
+}
+.cart {
+    display: inline-block;
+    vertical-align: middle;
+    background: #2f3033;
+    border-radius: 100%;
+    padding: 10px;
+    margin: 0 0 0 10px;
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+.cart i {
+    display: block;
+    margin: 2px auto;
+}
+.topzone-cart {
+    background-position: -239px -11px;
+    width: 14px;
+    height: 17px;
+}
+.view-cart {
+    position: absolute;
+    width: 220px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    right: 0;
+    top: 43px;
+    z-index: 10;
+    display: none;
+}
+.view-cart a {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #0071e3;
+    text-align: center;
+    font-size: 15px;
+    display: block;
+    margin-top: 5px;
+}
+.topzone-cohang {
+    background-position: -298px -94px;
+    width: 14px;
+    height: 14px;
+}
+.view-cart span {
+    font-size: 12px;
+}
+.form-search {
+    display: none;
+    width: 600px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    z-index: 9999;
+    height: 60px;
+    padding: 19px 0;
+}
+.click-search {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.click-search .topzone-search {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    left: 60px;
+    transition: .55s ease-out;
+    opacity: .2;
+}
+.topzone-search {
+    background-position: -187px -11px;
+    width: 18px;
+    height: 18px;
+}
+.click-search input {
+    float: right;
+    width: 100%;
+    padding-left: 85px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 0;
+    background: unset;
+    color: #fff;
+    transition: .65s ease-out;
+    opacity: .2;
+    animation-name: specialFadeInRight;
+    animation-duration: 400ms;
+    animation-fill-mode: both;
+    animation-delay: 350ms;
+}
+.click-search .topzone-delSearch {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    cursor: pointer;
+}
+.topzone-delSearch {
+    background-position: -214px -12px;
+    width: 14px;
+    height: 14px;
+}
+.sg-search {
+    position: absolute;
+    top: 60px;
+    width: 600px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 20px 25px;
+    border-radius: 0 0 16px 16px;
+    background: #fff;
+    display: none;
+    transition: .5s ease-out;
+}
+.bg-sg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: .8;
+    z-index: 9998;
+    display: none;
+}
+/*css start iphone1 */
+section {
+    max-width: 1170px;
+    min-width: 1024px;
+    margin: auto;
+    width: 100%;
+}
+.catename {
+    display: block;
+    overflow: hidden;
+    margin: 38px 0;
+    cursor: default;
+}
+.catename i {
+    display: block;
+    margin: auto;
+}
+i.logo-category>img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 35px;
+}
+.owl-carousel.owl-loaded {
+    display: block;
+}
+.owl-carousel {
+    display: none;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+.owl-carousel {
+    display: block !important;
+}
+.slide-cate {
+    display: block !important;
+    overflow: hidden;
+    position: relative;
+    border-radius: 24px;
+}
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+}
+.owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+    -moz-backface-visibility: hidden;
+}
+owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+}
+.owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+}
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+/*css end iphone1 */
