@@ -743,8 +743,8 @@ owl-carousel .owl-nav.disabled,
 }
 /* thương hiệu end */
 
-/* css footer */
-.footer {
+/* start css footer */
+footer {
   width: 100%;
   background: #101010;
 }
@@ -755,19 +755,17 @@ owl-carousel .owl-nav.disabled,
   margin: auto;
   display: block;
   padding-bottom: 10px;
-  color: #ececec;
+  padding-top: 3%;
 }
-.logo-foot {
-  display: block;
-  overflow: hidden;
-  padding: 30px 0;
-}
+
 .list-foot {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   border-bottom: 1px solid #333;
-  padding: 0 0 30px;
+  padding: 3% 0 30px;
+}
+ul, ol {
   list-style: none;
 }
 .list-foot li:first-child {
@@ -794,11 +792,6 @@ owl-carousel .owl-nav.disabled,
   padding: 0 0 10px;
   color: #e5e5e5;
 }
-
-a {
-  text-decoration: none;
-  transition: 0.3s;
-}
 .list-foot li a span {
   display: inline-block;
   width: 68px;
@@ -806,6 +799,15 @@ a {
   font-size: 13px;
   line-height: 18px;
   overflow: unset;
+}
+.list-foot li span {
+  display: block;
+  overflow: hidden;
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 0 0 8px;
+  font-weight: 500;
 }
 .list-foot li a b {
   font-weight: 400;
@@ -815,24 +817,57 @@ a {
   color: #888;
   margin-bottom: 10px;
 }
-
 .footer-social .link-social {
   display: inline-block;
   margin-right: 10px;
 }
-.facebook {
+.list-foot li a {
+  display: block;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 0 0 10px;
+  color: #e5e5e5;
+}
+.iconsocial-facebook {
   background-position: -45px 0;
   width: 33px;
   height: 33px;
 }
-.youtube {
+
+.iconsocial-youtube {
   background-position: 0 0;
   width: 33px;
   height: 33px;
 }
-.twitter {
+.iconsocial-zalo {
   background-position: -85px 0;
   width: 33px;
   height: 33px;
 }
+.list-foot li {
+  float: left;
+  width: 23%;
+}
+.list-foot li span {
+    display: block;
+    overflow: hidden;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0 0 8px;
+    font-weight: 500;
+}
+.list-foot li a {
+  display: block;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 0 0 10px;
+  color: #e5e5e5;
+}
+.logo-foot {
+    display: flex;
+}
 /* end css footer */
+
