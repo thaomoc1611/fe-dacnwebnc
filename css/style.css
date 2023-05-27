@@ -81,6 +81,10 @@ ul {
   width: 12%;
   transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+.menu li.hidden {
+  display: none;
+  transition: opacity .2s cubic-bezier(.645,.045,.355,1)
+}
 .menu li.active a {
   background: #2d2d2d;
 }
@@ -99,6 +103,112 @@ ul {
   color: #fff;
   font-size: 14px;
   line-height: 21px;
+}
+.menu li:nth-child(1) {
+  animation-delay: 30ms;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: specialFadeIn
+}
+
+.menu li:nth-child(2) {
+  animation-delay: 70ms;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: specialFadeIn
+}
+
+.menu li:nth-child(3) {
+  animation-delay: 100ms;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: specialFadeIn
+}
+
+.menu li:nth-child(4) {
+  animation-delay: 130ms;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: specialFadeIn
+}
+
+.menu li:nth-child(5) {
+  animation-delay: 170ms;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: specialFadeIn
+}
+
+.menu li:nth-child(6) {
+  animation-delay: 210ms;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: specialFadeIn
+}
+
+.menu li:nth-child(7) {
+  animation-delay: 240ms;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: specialFadeIn
+}
+
+.menu li:nth-child(8) {
+  animation-delay: 270ms;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: specialFadeIn
+}
+
+.menu li.hidden:nth-child(1) {
+  animation-delay: 245ms;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: specialFadeOut
+}
+
+.menu li.hidden:nth-child(2) {
+  animation-delay: 210ms;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: specialFadeOut
+}
+
+.menu li.hidden:nth-child(3) {
+  animation-delay: 170ms;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: specialFadeOut
+}
+
+.menu li.hidden:nth-child(4) {
+  animation-delay: 130ms;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: specialFadeOut
+}
+
+.menu li.hidden:nth-child(5) {
+  animation-delay: 100ms;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: specialFadeOut
+}
+
+.menu li.hidden:nth-child(6) {
+  animation-delay: 70ms;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: specialFadeOut
+}
+@keyframes specialFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(.8);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*start form-search active */
 .form-search.active {
@@ -144,6 +254,9 @@ ul {
   padding-left: 30px;
   opacity: 1;
 }
+.click-search input:placeholder {
+  color: #3e3e3f
+}
 input[type=text], input[type=tel], textarea {
   -webkit-appearance: none;
 }
@@ -162,6 +275,7 @@ input[type=text], input[type=tel], textarea {
   animation-duration: 400ms;
   animation-fill-mode: both;
   animation-delay: 350ms;
+  outline: none;
 }
 .click-search .topzone-delSearch {
   position: absolute;
@@ -171,8 +285,8 @@ input[type=text], input[type=tel], textarea {
 }
 .topzone-delSearch {
   background-position: -214px -12px;
-  width: 14px;
-  height: 14px;
+  width: 14px !important;
+  height: 14px !important;
 }
 .sg-search {
   position: absolute;
@@ -186,6 +300,36 @@ input[type=text], input[type=tel], textarea {
   background: #fff;
   display: none;
   transition: .5s ease-out;
+}
+[class^="topzone-"], [class*="topzone-"] {
+  background-image: url(//cdn.tgdd.vn/mwgcart/topzone/images/icon-topzone.webp);
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  background-size: 514px 226px;
+}
+@keyframes specialFadeOut {
+  0%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(.8);
+  }
+}
+@keyframes specialFadeInRight {
+  from {
+      opacity: 0;
+      transform: translate3d(10%,0,0)
+  }
+
+  to {
+      opacity: 1;
+      transform: none
+  }
 }
 /*end form-search active */
 
@@ -210,7 +354,7 @@ input[type=text], input[type=tel], textarea {
 }
 .search-sp .topzone-search {
   display: block;
-  margin: -5px auto;
+  margin: 2px auto;
 }
 .topzone-search {
   background-position: -187px -11px;
@@ -222,7 +366,7 @@ input[type=text], input[type=tel], textarea {
   vertical-align: middle;
   background: #2f3033;
   border-radius: 100%;
-  padding: 10px;
+  padding: 10px !important;
   margin: 0 0 0 10px;
   position: relative;
   height: 40px;
@@ -230,12 +374,12 @@ input[type=text], input[type=tel], textarea {
 }
 .cart i {
   display: block;
-  margin: -5px auto;
+  margin: 2px auto;
 }
 .topzone-cart {
   background-position: -239px -11px;
-  width: 14px;
-  height: 17px;
+  width: 14px !important;
+  height: 17px !important;
 }
 
 /* end cart */
@@ -966,3 +1110,16 @@ ul, ol {
 }
 /* end css footer */
 
+/* start css modal search */
+#dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: .8;
+  z-index: 9998;
+  display: none;
+}
+/* end css modal search */
