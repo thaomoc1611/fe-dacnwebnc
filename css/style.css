@@ -81,6 +81,12 @@ ul {
   width: 12%;
   transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+.menu li.active a {
+  background: #2d2d2d;
+}
+.menu li:hover a {
+  background: #2d2d2d;
+}
 .menu li a {
   display: block;
   overflow: hidden;
@@ -94,6 +100,95 @@ ul {
   font-size: 14px;
   line-height: 21px;
 }
+/*start form-search active */
+.form-search.active {
+  display: block;
+  width: 600px;
+  animation-name: specialFadeOut;
+  transition: opacity .2s cubic-bezier(.645,.045,.355,1);
+}
+.form-search {
+  display: none;
+  width: 600px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  z-index: 9999;
+  height: 60px;
+  padding: 19px 0;
+}
+.click-search {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.click-search.active .topzone-search {
+  left: 0;
+  opacity: 1;
+}
+.click-search .topzone-search {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  left: 60px;
+  transition: .55s ease-out;
+  opacity: .2;
+}
+.topzone-search {
+  background-position: -187px -11px;
+  width: 18px;
+  height: 18px;
+}
+.click-search.active input {
+  padding-left: 30px;
+  opacity: 1;
+}
+input[type=text], input[type=tel], textarea {
+  -webkit-appearance: none;
+}
+.click-search input {
+  float: right;
+  width: 100%;
+  padding-left: 85px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 0;
+  background: unset;
+  color: #fff;
+  transition: .65s ease-out;
+  opacity: .2;
+  animation-name: specialFadeInRight;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-delay: 350ms;
+}
+.click-search .topzone-delSearch {
+  position: absolute;
+  right: 0;
+  top: 1px;
+  cursor: pointer;
+}
+.topzone-delSearch {
+  background-position: -214px -12px;
+  width: 14px;
+  height: 14px;
+}
+.sg-search {
+  position: absolute;
+  top: 60px;
+  width: 600px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding: 20px 25px;
+  border-radius: 0 0 16px 16px;
+  background: #fff;
+  display: none;
+  transition: .5s ease-out;
+}
+/*end form-search active */
+
 /* cart */
 .search-cart {
   float: right;
