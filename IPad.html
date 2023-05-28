@@ -33,7 +33,7 @@
                         </a>
                     </div>
                     <ul class="menu">
-                        <li class="menu-ip  ">
+                        <li class="menu-ip ">
                             <a href="./Iphone.html">
                                 <span>iPhone</span>
                             </a>
@@ -43,7 +43,7 @@
                                 <span>Mac</span>
                             </a>
                         </li>
-                        <li class="menu-ipad active">
+                        <li class="menu-ipad ">
                             <a href="IPad.html">
                                 <span>iPad</span>
                             </a>
@@ -64,14 +64,24 @@
                             </a>
                         </li>
                         <li class="search-cart">
-                            <a href="/" class="search-sp">
-                                <i class="fa-solid fa-magnifying-glass topzone-search"></i>
-                            </a>
-                            <a href="/" class="cart">
-                                <i class="fa-solid fa-cart-shopping topzone-cart"></i>
+                            <div class="search-sp">
+                                <i class="topzone-search"></i>
+                            </div>
+                            <a href="/cart" class="cart">
+                                <i class="topzone-cart"></i>
                             </a>
                         </li>
                     </ul>
+                    <form class="form-search" onsubmit="return false;">
+                        <div class="click-search active">
+                            <i class="topzone-search"></i>
+                            <input type="text" placeholder="Tìm kiếm sản phẩm">
+                            <i class="topzone-delSearch"></i>
+                        </div>
+                        <button type="submit" class="submit-search" style="display:none">
+                        </button>
+                        <div class="sg-search" style="display: none;"></div>
+                    </form>
                 </div>
             </div>
         </section>
