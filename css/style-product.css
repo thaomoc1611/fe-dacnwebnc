@@ -953,6 +953,7 @@ img {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    color: #ffb02f
 }
 ul, ol {
     list-style: none;
