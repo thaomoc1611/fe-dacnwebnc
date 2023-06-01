@@ -23,8 +23,8 @@ section {
 #slider-detail {
   width: 600px;
   margin-right: 20px;
-  position: sticky;
-  top: 15px;
+  /* position: sticky; */
+  /* top: 15px; */
   padding-bottom: 110px;
 }
 .intro-detail aside {
@@ -325,12 +325,12 @@ img {
 }
 h1 {
   display: block;
-  padding: 0 0 20px;
+  padding: 5px 0 20px;
   color: #fff !important;
-  font-size: 32px;
-  font-weight: 700;
-  padding-top: 5px;
-  line-height: 1.2;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
   position: relative;
 }
 .price-promo-local {
@@ -346,6 +346,17 @@ h1 {
   line-height: 20px;
   cursor: pointer;
   padding-right: 15px;
+}
+.price-promo-local span::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(45deg);
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 6px 6px;
 }
 .store-province {
   position: absolute;
@@ -533,6 +544,17 @@ ol {
   color: #fff;
   cursor: pointer;
 }
+.check-goods::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(-45deg);
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 2px 2px;
+}
 .check-goods i {
   display: inline-block;
   vertical-align: middle;
@@ -572,15 +594,21 @@ ol {
   background: #0071e3;
   font-weight: 700;
 }
+.buy-sp a:hover {
+  color: #fff;
+  text-decoration: none;
+}
 .buy-sp .btn-ins.has-another-pay {
   width: 49%;
 }
 .buy-sp .btn-ins.pay-taichinh {
   float: left;
 }
+.buy-sp .btn-ins.pay-nganluong {
+  float: right;
+}
 .buy-sp .btn-ins.pay-taichinh,
 .buy-sp .btn-ins.pay-nganluong {
-  float: left;
   color: #101010;
   background: #fff;
   font-size: 16px;
@@ -671,6 +699,9 @@ ol {
 .policy {
   display: block;
   overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 0;
+  background: inherit;
 }
 .policy li {
   display: block;

@@ -21,7 +21,8 @@ header {
   background: #101010;
   height: 60px;
 }
-head {
+.head {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
@@ -64,11 +65,8 @@ head {
 /*end css-logo */
 .menu {
   float: left;
-  width: 67%;
-  margin-left: 13%;
-}
-ul {
-  list-style: none;
+  width: 65%;
+  margin: 0;
 }
 .menu li {
   animation-delay: 30ms;
@@ -340,9 +338,6 @@ textarea {
 .search-cart {
   float: right;
   position: relative;
-  display: flex;
-  margin-left: 15%;
-  margin-top: 1%;
 }
 .search-sp {
   display: inline-block;
