@@ -83,7 +83,7 @@ ul {
 }
 .menu li.hidden {
   display: none;
-  transition: opacity .2s cubic-bezier(.645,.045,.355,1)
+  transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .menu li.active a {
   background: #2d2d2d;
@@ -108,103 +108,103 @@ ul {
   animation-delay: 30ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
-  animation-name: specialFadeIn
+  animation-name: specialFadeIn;
 }
 
 .menu li:nth-child(2) {
   animation-delay: 70ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
-  animation-name: specialFadeIn
+  animation-name: specialFadeIn;
 }
 
 .menu li:nth-child(3) {
   animation-delay: 100ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
-  animation-name: specialFadeIn
+  animation-name: specialFadeIn;
 }
 
 .menu li:nth-child(4) {
   animation-delay: 130ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
-  animation-name: specialFadeIn
+  animation-name: specialFadeIn;
 }
 
 .menu li:nth-child(5) {
   animation-delay: 170ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
-  animation-name: specialFadeIn
+  animation-name: specialFadeIn;
 }
 
 .menu li:nth-child(6) {
   animation-delay: 210ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
-  animation-name: specialFadeIn
+  animation-name: specialFadeIn;
 }
 
 .menu li:nth-child(7) {
   animation-delay: 240ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
-  animation-name: specialFadeIn
+  animation-name: specialFadeIn;
 }
 
 .menu li:nth-child(8) {
   animation-delay: 270ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
-  animation-name: specialFadeIn
+  animation-name: specialFadeIn;
 }
 
 .menu li.hidden:nth-child(1) {
   animation-delay: 245ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
-  animation-name: specialFadeOut
+  animation-name: specialFadeOut;
 }
 
 .menu li.hidden:nth-child(2) {
   animation-delay: 210ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
-  animation-name: specialFadeOut
+  animation-name: specialFadeOut;
 }
 
 .menu li.hidden:nth-child(3) {
   animation-delay: 170ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
-  animation-name: specialFadeOut
+  animation-name: specialFadeOut;
 }
 
 .menu li.hidden:nth-child(4) {
   animation-delay: 130ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
-  animation-name: specialFadeOut
+  animation-name: specialFadeOut;
 }
 
 .menu li.hidden:nth-child(5) {
   animation-delay: 100ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
-  animation-name: specialFadeOut
+  animation-name: specialFadeOut;
 }
 
 .menu li.hidden:nth-child(6) {
   animation-delay: 70ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
-  animation-name: specialFadeOut
+  animation-name: specialFadeOut;
 }
 @keyframes specialFadeIn {
   0% {
     opacity: 0;
-    transform: scale(.8);
+    transform: scale(0.8);
   }
   100% {
     opacity: 1;
@@ -215,7 +215,7 @@ ul {
   display: block;
   width: 600px;
   animation-name: specialFadeOut;
-  transition: opacity .2s cubic-bezier(.645,.045,.355,1);
+  transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .form-search {
   display: none;
@@ -242,8 +242,8 @@ ul {
   display: block;
   position: absolute;
   left: 60px;
-  transition: .55s ease-out;
-  opacity: .2;
+  transition: 0.55s ease-out;
+  opacity: 0.2;
 }
 .topzone-search {
   background-position: -187px -11px;
@@ -255,9 +255,11 @@ ul {
   opacity: 1;
 }
 .click-search input:placeholder {
-  color: #3e3e3f
+  color: #3e3e3f;
 }
-input[type=text], input[type=tel], textarea {
+input[type="text"],
+input[type="tel"],
+textarea {
   -webkit-appearance: none;
 }
 .click-search input {
@@ -269,8 +271,8 @@ input[type=text], input[type=tel], textarea {
   border: 0;
   background: unset;
   color: #fff;
-  transition: .65s ease-out;
-  opacity: .2;
+  transition: 0.65s ease-out;
+  opacity: 0.2;
   animation-name: specialFadeInRight;
   animation-duration: 400ms;
   animation-fill-mode: both;
@@ -299,9 +301,10 @@ input[type=text], input[type=tel], textarea {
   border-radius: 0 0 16px 16px;
   background: #fff;
   display: none;
-  transition: .5s ease-out;
+  transition: 0.5s ease-out;
 }
-[class^="topzone-"], [class*="topzone-"] {
+[class^="topzone-"],
+[class*="topzone-"] {
   background-image: url(//cdn.tgdd.vn/mwgcart/topzone/images/icon-topzone.webp);
   background-repeat: no-repeat;
   display: inline-block;
@@ -312,23 +315,23 @@ input[type=text], input[type=tel], textarea {
   background-size: 514px 226px;
 }
 @keyframes specialFadeOut {
-  0%{
+  0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    transform: scale(.8);
+    transform: scale(0.8);
   }
 }
 @keyframes specialFadeInRight {
   from {
-      opacity: 0;
-      transform: translate3d(10%,0,0)
+    opacity: 0;
+    transform: translate3d(10%, 0, 0);
   }
 
   to {
-      opacity: 1;
-      transform: none
+    opacity: 1;
+    transform: none;
   }
 }
 /*end form-search active */
@@ -436,7 +439,7 @@ input[type=text], input[type=tel], textarea {
 }
 .box-cate-product {
   background-color: #3e3e3f;
-  margin-top: -3.3%;
+  margin-top: -3.7%;
 }
 .choose-cate {
   display: flex;
@@ -1004,7 +1007,8 @@ footer {
   border-bottom: 1px solid #333;
   padding: 3% 0 30px;
 }
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 .list-foot li:first-child {
@@ -1089,13 +1093,13 @@ ul, ol {
   width: 23%;
 }
 .list-foot li span {
-    display: block;
-    overflow: hidden;
-    color: #fff;
-    font-size: 15px;
-    line-height: 20px;
-    padding: 0 0 8px;
-    font-weight: 500;
+  display: block;
+  overflow: hidden;
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 0 0 8px;
+  font-weight: 500;
 }
 .list-foot li a {
   display: block;
@@ -1106,7 +1110,7 @@ ul, ol {
   color: #e5e5e5;
 }
 .logo-foot {
-    display: flex;
+  display: flex;
 }
 /* end css footer */
 
@@ -1118,7 +1122,7 @@ ul, ol {
   right: 0;
   bottom: 0;
   background: #000;
-  opacity: .8;
+  opacity: 0.8;
   z-index: 9998;
   display: none;
 }
